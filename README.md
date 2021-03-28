@@ -1,24 +1,29 @@
-# task-manager
+# Anduril
 
-## Project setup
-```
-npm install
-```
+Stupid task manager. Work with just your keyboard.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Keyboard shortcuts
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Navigation
+- `j` down
+- `k` up
+- `h` left
+- `l` right
 
-### Lints and fixes files
-```
-npm run lint
-```
+Actions
+- `t` create new task under "today"
+- `b` create new task under "backlog"
+- `s` create a subtask
+- `x` mark task as done
+- `d` delete a task
+- `ctrl + d` delete all completed tasks
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![screenshot](screenshot.png)
+
+
+## Installation
+
+```
+$ npm install
+$ npm run serve
+```
