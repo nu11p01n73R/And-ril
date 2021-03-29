@@ -87,11 +87,22 @@ export default {
 
     methods: {
         sort(tasks) {
-            return tasks.sort((task1, task2) => {
-                if (task1.completed() && !task2.completed()) return 1
-                else if (!task1.completed() && task2.completed) return -1
-                else return 0
+            var items = tasks.map((task,  index) => ({
+                index: index,
+                task: task
+            }))
+
+            items.sort((wrapper1, wrapper2) => {
+                if (wrapper1.task.completed() && !wrapper2.task.completed())
+                    return 1
+                else if (!wrapper1.task.completed() && wrapper2.task.completed())
+                    return -1
+                else
+                    return wrapper1.index - wrapper2.index
+
             })
+
+            return items.map(wrapper => wrapper.task)
         },
 
         flatten(tasks) {
