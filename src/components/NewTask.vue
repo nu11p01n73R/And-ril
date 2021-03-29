@@ -50,6 +50,7 @@ export default {
     color: #FFFFFF;
     background-color: #709b77;
     font-weight: 800;
+    border: none;
 }
 
 .new-task:focus {
