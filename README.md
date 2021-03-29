@@ -16,6 +16,7 @@ Actions
 - `s` create a subtask
 - `x` mark task as done
 - `d` delete a task
+- `m` move task to other list
 - `ctrl + d` delete all completed tasks
 
 ![screenshot](screenshot.png)
