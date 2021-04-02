@@ -8,7 +8,7 @@
 
         @keydown.x="toggleStatus"
         @keydown.m="move"
-        @keydown.d.exact="current().delete()"
+        @keydown.d.exact="current.delete"
         @keydown.ctrl.d="$emit('delete-completed')"
 
         @keydown.t.prevent="$emit('create', 'TODAY')"
