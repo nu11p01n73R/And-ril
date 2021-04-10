@@ -38,6 +38,9 @@ function Task(title, when) {
 
     this.done = function() {
         this.status = status.DONE
+
+        if (!this.isSubtask)
+            this.subtasks.forEach(t => t.done())
     }
 
     this.redo = function() {
